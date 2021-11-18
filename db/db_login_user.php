@@ -1,3 +1,5 @@
+<?php session_start();  ?>
+
 <?php 
 
     include_once("db_connection.php");
@@ -5,6 +7,10 @@
     if(isset($_POST["submit"])) {
         $username = $_POST["username"];
         $user_password = $_POST["password"];
+
+        $_SESSION['username'] = $username;
+        $_SESSION['password'] = $user_password;
+
 
         $query = "SELECT * FROM records WHERE username='$username' AND user_password='$user_password'";
         $run = mysqli_query($connection, $query);
