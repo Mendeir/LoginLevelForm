@@ -1,5 +1,5 @@
 <?php 
-    include_once("db_login_level_form_conection_script.php");
+    include_once("db_connection.php");
 
     $sql_command = "INSERT INTO records(email, username, user_password, user_level, user_status)
     VALUES ('user1@email.com', 'user1', 'user123', 'admin', 'active');";

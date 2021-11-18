@@ -20,12 +20,12 @@
     
     <section>
         
-        <form action="db/insert_records_script.php" method="POST">
+        <form action="db/db_login_user.php" method="POST">
             <label for="username">Username</label>
-            <input type="text" name="username">
+            <input type="text" name="username" required>
 
             <label for="password">Password</label>
-            <input type="text" name="password">
+            <input type="password" name="password" required>
 
             <input type="submit" id="save-button" name="submit" value="Login">
         </form>

@@ -24,19 +24,19 @@
         
         <form action="db/insert_records_script.php" method="POST">
             <label for="email">Email</label>
-            <input type="text" name="email">
+            <input type="text" name="email" required>
 
             <label for="username">Username</label>
-            <input type="text" name="username">
+            <input type="text" name="username" required>
 
             <label for="password">Password</label>
-            <input type="text" name="password">
+            <input type="password" name="password" required>
 
             <label for="user-level">User Level</label>
-            <input type="text" name="user-level">
+            <input type="text" name="user-level" required>
 
             <label for="status">Status</label>
-            <input type="text" name="status">
+            <input type="text" name="status" required>
 
             <input type="submit" id="save-button" name="submit" value="Save">
         </form>
