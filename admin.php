@@ -38,7 +38,10 @@
 		<a href="logout.php">Logout</a>
 		<br>
 		<a href="view_records.php">View Records</a>
-
+		<br>
+		<?php
+		include("upload.php")
+		?>
 	</center>
 </body>
 </html>
